@@ -1,0 +1,27 @@
+.headers, .inputs, .outputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: center;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 1.1em;
+  margin: 1.1em;
+}
+
+.radio, .checkboxes{
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+background-color: salmon;
+border: 5px;
+border-radius: 5px;
+color: black;
+padding: 15px 25px;
+text-align: center;
+font-size: 16px;
+cursor: wait;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RPG Character Collections</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/app.js"></script>
+  </head>
+  <body>
+
+
+    <form id="new-character">
+      <h2>New Character</h2>
+      <div id="form-wrapper">
+
+        <div class="headers">
+          <label for="name">Name</label>
+          <label for="race">Race</label>
+          <label for="playerClass">Class</label>
+          <label for="level">Level</label>
+          <label for="Alignment">Alignment</label>
+          <label for="hp">Hit Points</label>
+        </div>
+
+        <div class="inputs">
+          <input type="text" id="name" required/>
+
+          <div class="radio">
+            <input type="radio" name="race" value="Human" checked> Human
+            <input type="radio" name="race" value="Elf"> Elf
+            <input type="radio" name="race" value="Half-Elf"> Half-Elf
+            <input type="radio" name="race" value="Dwarf"> Dwarf
+            <input type="radio" name="race" value="Orc"> Orc
+          </div>
+
+          <div class="checkboxes">
+            <input type="checkbox" name="playerClass1" value="fighter"> Fighter
+            <input type="checkbox" name="playerClass2" value="mage"> Mage
+            <input type="checkbox" name="playerClass3" value="priest"> Priest
+            <input type="checkbox" name="playerClass4" value="paladin"> Paladin
+            <input type="checkbox" name="playerClass5" value="rogue"> Rogue
+          </div>
+
+          <select id="level">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+          </select>
+
+          <select id="alignment">
+            <option value="lg" selected>Lawful Good</option>
+            <option value="ln">Lawful Neutral</option>
+            <option value="le">Lawful Evil</option>
+            <option value="ng">Neutral Good</option>
+            <option value="tn">True Neutral</option>
+            <option value="ne">Neutral Evil</option>
+            <option value="cg">Chaotic Good</option>
+            <option value="cn">Chaotic Neutral</option>
+            <option value="ce">Chaotic Evil</option>
+          </select>
+
+          <input type="text" id="hp" required/>
+        </div>
+
+
+
+        <div class="headers">
+        <input class="button" type="submit" value="save"/>
+        </div>
+      </div>
+    </form>
+
+
+
+    <h2>All Characters</h2>
+    <form id="delete-button">
+    <input class="button" type="submit" value="Delete"/>
+    </form>
+    <div class="character-list">
+
+      <div class="headers">
+        <label for="name">Name</label>
+        <label for="race">Race</label>
+        <label for="playerClass">Class</label>
+        <label for="level">Level</label>
+        <label for="Alignment">Alignment</label>
+        <label for="hp">Hit Points</label>
+      </div>
+
+
+      <div id="output"></div>
+
+    </div>
+
+    <!-- <h1>Reading List</h1>
+    <div id="reading-list"><tc>Title</tc><tc>Author</tc><tc>Category</tc>
+      <div id= "table-row"></div>
+
+    </div>
+    <button id="delete-button" type="button">DELETE</button> -->
+
+  </body>
+</html>
